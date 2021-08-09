@@ -1,7 +1,7 @@
-package creational.abstractfactory.factory;
+package creational.abstractfactory.my.factory;
 
-import creational.abstractfactory.product.ProductA;
-import creational.abstractfactory.product.ProductB;
+import creational.abstractfactory.my.product.ProductA;
+import creational.abstractfactory.my.product.ProductB;
 
 // 抽象工厂
 

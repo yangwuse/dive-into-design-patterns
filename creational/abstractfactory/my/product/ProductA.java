@@ -1,4 +1,4 @@
-package creational.abstractfactory.product;
+package creational.abstractfactory.my.product;
 
 // A 类产品接口
 

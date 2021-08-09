@@ -1,4 +1,4 @@
-package creational.abstractfactory.product;
+package creational.abstractfactory.my.product;
 
 // A2 产品
 

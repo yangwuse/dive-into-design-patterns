@@ -1,9 +1,6 @@
-package creational.abstractfactory.factory;
+package creational.abstractfactory.my.factory;
 
-import creational.abstractfactory.product.ProductA;
-import creational.abstractfactory.product.ProductA2;
-import creational.abstractfactory.product.ProductB;
-import creational.abstractfactory.product.ProductB2;
+import creational.abstractfactory.my.product.*;
 
 // 工厂2 
 // 生产产品套件: A2 B2

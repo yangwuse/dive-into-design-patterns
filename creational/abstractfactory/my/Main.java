@@ -1,9 +1,6 @@
-package creational.abstractfactory;
+package creational.abstractfactory.my;
 
-import creational.abstractfactory.factory.AbstractFactory;
-import creational.abstractfactory.factory.Factory1;
-import creational.abstractfactory.factory.Factory2;
-import creational.factorymethod.factory.Factory;
+import creational.abstractfactory.my.factory.*;
 
 // 客户段代码
 
