@@ -10,6 +10,6 @@ public abstract class Factory {
         product.name();
     }
 
-    // 抽象方法
+    // 抽象方法「类型延迟绑定」
     abstract Product createProduct();
 }

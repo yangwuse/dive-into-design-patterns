@@ -3,8 +3,6 @@ package creational.factorymethod;
 import creational.factorymethod.factory.AFactory;
 import creational.factorymethod.factory.BFactory;
 import creational.factorymethod.factory.Factory;
-import creational.factorymethod.product.AProduct;
-import creational.factorymethod.product.Product;
 
 public class Main {
     // 引用工厂接口
