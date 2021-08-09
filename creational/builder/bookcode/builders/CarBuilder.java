@@ -1,5 +1,8 @@
 package creational.builder.bookcode.builders;
 
+import creational.builder.bookcode.cars.*;
+import creational.builder.bookcode.components.*;
+
 // 实现每个构造步骤
 
 public class CarBuilder implements Builder {
@@ -33,7 +36,7 @@ public class CarBuilder implements Builder {
 
     @Override
     public void setTripComputer(TripComputer computer) {
-        this.transmission = computer;   
+        this.tripComputer = computer;   
     }
 
     @Override

@@ -2,7 +2,7 @@ package creational.builder.bookcode.cars;
 
 import creational.builder.bookcode.components.*;
 
-public class Manul {
+public class Manual {
     private final Type type;
     private final int seats;
     private final Engine engine;
