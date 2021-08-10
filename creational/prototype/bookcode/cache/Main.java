@@ -8,7 +8,7 @@ public class Main {
         Shape shape1 = cache.get("Green Circle");
         Shape shape2 = cache.get("Blue Rectangle");
         Shape shape3 = cache.get("Blue Rectangle");
-        
+        System.out.println(shape1 == shape2);
         System.out.println(shape2 == shape3);
     }
 }
