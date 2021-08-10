@@ -1,4 +1,4 @@
-package creational.builder.my;
+package creational.builder.my.products;
 
 import creational.builder.my.components.*;
 
@@ -30,6 +30,8 @@ public class Product {
             sb.append(c).append(", ");
         if (d != null)
             sb.append(d).append(",  ");
+        if (sb.length() < 5)
+            return sb.toString();
         return sb.substring(0, sb.length() - 3);
     } 
 }

@@ -1,6 +1,6 @@
 package creational.builder.my;
 
-import creational.builder.my.builders.Builder;
+import creational.builder.my.builders.*;
 import creational.builder.my.components.*;
 
 // 初始化各个产品所需的组件
@@ -20,4 +20,9 @@ public class Director {
         builder.setA(new A("Component A2"));
         builder.setD(new D("Component B2"));
     }
+    // 加入新组件后的产品
+    public void createProductx(Builder builder) {
+        builder.setName("PX");
+    }
+
 }

@@ -1,7 +1,7 @@
 package creational.builder.my.builders;
 
-import creational.builder.my.Product;
 import creational.builder.my.components.*;
+import creational.builder.my.products.Product;
 
 // product2 的构造对象 builder2 
 // 只包含组件 A D

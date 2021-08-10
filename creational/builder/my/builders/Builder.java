@@ -2,8 +2,7 @@ package creational.builder.my.builders;
 
 import creational.builder.my.components.*;
 
-// 所有产品组件的构造
-// 产品最多同时包含组件 A B C D
+// 构造产品的公共步骤
 
 public interface Builder {
     void setName(String name);
