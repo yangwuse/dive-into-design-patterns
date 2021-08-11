@@ -8,6 +8,6 @@ public class Main {
         // System.out.println(c.fit(s));
 
         SquareAdapter adapter = new SquareAdapter(s);
-        System.out.println(c.fit(adapter));
+        System.out.println(adapter.fit(c));
     }
 }
