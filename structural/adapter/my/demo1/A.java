@@ -1,4 +1,4 @@
-package structural.adapter.my;
+package structural.adapter.my.demo1;
 
 // 服务提供方 A 接口
 

@@ -1,4 +1,4 @@
-package structural.adapter.my;
+package structural.adapter.my.demo1;
 
 // 用户使用 B 接口
 

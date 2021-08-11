@@ -1,4 +1,4 @@
-package structural.adapter.my;
+package structural.adapter.my.demo1;
 
 // 适配器将 A 接口转换为 B 接口
 
