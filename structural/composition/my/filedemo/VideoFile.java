@@ -1,4 +1,4 @@
-package structural.composition.my.demo1;
+package structural.composition.my.filedemo;
 
 public class VideoFile extends File{
     public VideoFile(String name) {

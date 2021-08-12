@@ -1,4 +1,4 @@
-package structural.composition.my.demo2;
+package structural.composition.my.nodedemo;
 
 import java.util.ArrayList;
 import java.util.List;

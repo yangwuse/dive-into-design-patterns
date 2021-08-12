@@ -1,4 +1,4 @@
-package structural.composition.my.demo1;
+package structural.composition.my.filedemo;
 
 // 安全组合模式
 // 不能统一元素对象和容器对象

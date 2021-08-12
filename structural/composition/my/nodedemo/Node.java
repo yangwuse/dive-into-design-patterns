@@ -1,4 +1,4 @@
-package structural.composition.my.demo2;
+package structural.composition.my.nodedemo;
 
 // 透明组合模式
 // 抽象节点包含子类全部操作

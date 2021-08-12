@@ -1,4 +1,4 @@
-package structural.composition.my.demo1;
+package structural.composition.my.filedemo;
 
 // 安全组合模式 
 // 抽象节点只包含元素节点和容器节点的公共操作

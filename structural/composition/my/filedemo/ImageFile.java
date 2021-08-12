@@ -1,4 +1,4 @@
-package structural.composition.my.demo1;
+package structural.composition.my.filedemo;
 
 // 元素对象
 
