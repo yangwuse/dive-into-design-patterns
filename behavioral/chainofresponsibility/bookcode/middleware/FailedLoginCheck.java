@@ -30,7 +30,7 @@ public class FailedLoginCheck extends Middleware{
         
         boolean res = checkNext(email, password);
         if (!res)
-            System.out.println("请求失败! 剩余请求数: " + (3 - request));
+            System.out.println("请求失败! 剩余请求数: " + (requestPerMinute - request));
         return res;
     }
 }
