@@ -1,4 +1,4 @@
-package behavioral.command.bookcode.commands;
+package behavioral.command.bookcode;
 
 // 具体的命令 负责操作逻辑
 // 文本剪切 删除选中文本
@@ -18,6 +18,7 @@ public class CutCommand extends Command{
         String source = editor.textField.getText();
         editor.clipboard = editor.textField.getSelectedText();
         editor.textField.setText(cutString(source));
+        return true;
     }
 
     // 删除中间选中文本 拼接两端文本

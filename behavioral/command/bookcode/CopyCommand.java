@@ -1,4 +1,4 @@
-package behavioral.command.bookcode.commands;
+package behavioral.command.bookcode;
 
 // 复制命令
 
@@ -10,7 +10,7 @@ public class CopyCommand extends Command{
     @Override
     public boolean execute() {
         editor.clipboard = editor.textField.getSelectedText();
-        return true;
+        return false;
     }
 
 }

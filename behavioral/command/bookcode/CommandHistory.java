@@ -1,4 +1,4 @@
-package behavioral.command.bookcode.commands;
+package behavioral.command.bookcode;
 
 import java.util.Deque;
 import java.util.LinkedList;
@@ -15,7 +15,7 @@ public class CommandHistory {
     }
 
     // 暴露公共操作 pop
-    public Command pop(Command c) {
+    public Command pop() {
         return history.pop();
     }
 

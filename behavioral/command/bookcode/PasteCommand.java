@@ -1,4 +1,4 @@
-package behavioral.command.bookcode.commands;
+package behavioral.command.bookcode;
 
 // 粘贴命令
 
@@ -13,7 +13,7 @@ public class PasteCommand extends Command{
             return false;
         
         backup();
-        editor.textField.insert(editor.clipboard, editor.textField.getInsertPosition());
+        editor.textField.insert(editor.clipboard, editor.textField.getCaretPosition());
         return true;
     }
 

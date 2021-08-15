@@ -1,7 +1,7 @@
-package behavioral.command.bookcode.commands;
+package behavioral.command.bookcode;
 
 // 命令接口
-// 实现命令撤销
+// 每个命令都可以撤销
 
 public abstract class Command {
     // 持有请求接受对象的引用

@@ -1,4 +1,4 @@
-package behavioral.command.bookcode.commands;
+package behavioral.command.bookcode;
 
 import java.awt.FlowLayout;
 
@@ -37,14 +37,37 @@ public class Editor {
         JButton ctrlZ = new JButton("Ctrl+Z");
         Editor editor = this;
         // 设置按钮事件监听器
-        ctrlC.addActionListener(e -> executeCommand(new CopyCommand(editor)));
-        ctrlV.setActio
+        ctrlC.addActionListener(
+            e -> executeCommand(new CopyCommand(editor)));
+        ctrlX.addActionListener(
+            e -> executeCommand(new CutCommand(editor)));
+        ctrlV.addActionListener(
+            e -> executeCommand(new PasteCommand(editor)));
+        ctrlZ.addActionListener(
+            e -> undo());
+        buttons.add(ctrlC);
+        buttons.add(ctrlX);
+        buttons.add(ctrlV);
+        buttons.add(ctrlZ);
+        content.add(buttons);
+        frame.setSize(450, 200);
+        frame.setLocationRelativeTo(null);
+        frame.setVisible(true);
     }
 
-    public void executeCommand(Command command) {
+    private void executeCommand(Command command) {
         if (command.execute()) {
             history.push(command);
         }
     }
+
+    private void undo() {
+        if (history.isEmpty()) return;
+
+        Command command = history.pop();
+        if (command != null)
+            command.undo();
+    }
+
 
 }
