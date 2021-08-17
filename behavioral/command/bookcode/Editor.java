@@ -66,6 +66,7 @@ public class Editor {
 
         Command command = history.pop();
         if (command != null)
+        
             command.undo();
     }
 
