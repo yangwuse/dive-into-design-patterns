@@ -22,9 +22,9 @@ public class FacebookIter implements ProfileIterator{
 
     private void lazyLoad() {
         if (emails.size() == 0) {
-            List<String> friends = facebook.getFriends(email, type);
-            for (String friend : friends) {
-                emails.add(friend);
+            List<String> contacts = facebook.getContacts(email, type);
+            for (String contact : contacts) {
+                emails.add(contact);
                 profiles.add(null);
             }
         }

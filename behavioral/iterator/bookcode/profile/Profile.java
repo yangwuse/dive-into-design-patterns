@@ -14,14 +14,8 @@ public class Profile {
         this.email = email;
         for (String contact : contacts) {
             String[] parts = contact.split(":");
-            String contactType = "friend";
-            String contactEmail;
-            if (parts.length == 1)
-                contactEmail = parts[0];
-            else {
-                contactType = parts[0];
-                contactEmail = parts[1];
-            }
+            String contactType = parts[0];
+            String contactEmail = parts[1];
             this.contacts.computeIfAbsent(contactType, 
                 key -> new ArrayList<>()).add(contactEmail);
         }

@@ -24,7 +24,7 @@ public class Facebook implements SocialNetwork{
         return findProfile(profileEmail);
     }
 
-    public List<String> getFriends(String profileEmail, String contactType) {
+    public List<String> getContacts(String profileEmail, String contactType) {
         simulateNetworkLatency();
         System.out.println("Facebook: Loading '" + contactType + 
             "' list of '" + profileEmail + "' over the network...");
