@@ -11,8 +11,8 @@ public class FacebookIter implements ProfileIterator{
     private String type;
     private String email;
     private int currentPosition;
-    private List<String> emails = new ArrayList<>();
-    private List<Profile> profiles = new ArrayList<>();
+    private List<String> contactsEmails = new ArrayList<>();
+    private List<Profile> contactsProfiles = new ArrayList<>();
 
     public FacebookIter(Facebook facebook, String type, String email) {
         this.facebook = facebook;
@@ -21,11 +21,11 @@ public class FacebookIter implements ProfileIterator{
     }
 
     private void lazyLoad() {
-        if (emails.size() == 0) {
+        if (contactsEmails.isEmpty()) {
             List<String> contacts = facebook.getContacts(email, type);
             for (String contact : contacts) {
-                emails.add(contact);
-                profiles.add(null);
+                contactsEmails.add(contact);
+                contactsProfiles.add(null);
             }
         }
     }
@@ -33,18 +33,18 @@ public class FacebookIter implements ProfileIterator{
     @Override
     public boolean hasNext() {
         lazyLoad();
-        return currentPosition < emails.size();
+        return currentPosition < contactsEmails.size();
     }
 
     @Override
     public Profile getNext() {
         if (!hasNext())
             return null;
-        String friendEmail = emails.get(currentPosition);
-        Profile friendProfile = profiles.get(currentPosition);
+        String friendEmail = contactsEmails.get(currentPosition);
+        Profile friendProfile = contactsProfiles.get(currentPosition);
         if (friendProfile == null) {
             friendProfile = facebook.getProfile(friendEmail);
-            profiles.set(currentPosition, friendProfile);
+            contactsProfiles.set(currentPosition, friendProfile);
         }
         currentPosition++;
         return friendProfile;

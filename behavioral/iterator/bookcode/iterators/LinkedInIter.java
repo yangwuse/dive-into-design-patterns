@@ -21,7 +21,7 @@ public class LinkedInIter implements ProfileIterator {
     }
 
     private void lazyLoad() {
-        if (emails.size() == 0) {
+        if (emails.isEmpty()) {
             List<String> friendsEmails = linkedIn.getFriendsEmails(email, type);
             for (String email : friendsEmails) {
                 emails.add(email);
