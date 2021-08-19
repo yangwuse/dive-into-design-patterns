@@ -1,6 +1,5 @@
 package behavioral.mediator.bookcode;
 
-import javax.print.attribute.standard.Media;
 import javax.swing.DefaultListModel;
 
 import behavioral.mediator.bookcode.components.AddButton;

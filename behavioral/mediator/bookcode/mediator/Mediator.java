@@ -8,6 +8,10 @@ import behavioral.mediator.bookcode.components.Component;
 // 包含组件间相互交流的方法
 
 public interface Mediator {
+    // 注册各种 GUI 组件
+    void registerComponent(Component component);
+
+    // 各种组件通信方法
     void addNewNote(Note note);
     void deleteNote();
     void getInfoFromList(Note note);
@@ -16,7 +20,6 @@ public interface Mediator {
     void clear();
     void sendToFilter(ListModel listModel);
     void setElementsList(ListModel list);
-    void registerComponent(Component component);
     void hideElements(boolean flag);
     void createGUI();
 }

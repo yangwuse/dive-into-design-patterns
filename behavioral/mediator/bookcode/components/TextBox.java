@@ -22,7 +22,4 @@ public class TextBox extends JTextArea implements Component {
     public String getName() {
         return "TextBox";
     }
-
-
-
 }
