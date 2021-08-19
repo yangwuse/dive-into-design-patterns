@@ -16,6 +16,7 @@ public class Editor {
     public JTextArea textField;
     public String clipboard;
     private CommandHistory history = new CommandHistory();
+    public Object events;
 
     public void init() {
         // 顶层窗口 设置标题
